@@ -1,11 +1,9 @@
 import './TodoList.css'
 
-function TodoList() {
+function TodoList(props) {
+    console.log(props.todo)
     return (
         <ul>
-            <li>Learn React</li>
-            <li>Build Tools</li>
-            <li>Record</li>
         </ul>
     );
 }
