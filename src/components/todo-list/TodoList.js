@@ -1,10 +1,13 @@
 import './TodoList.css'
 
 function TodoList(props) {
-    console.log(props.todo)
+    // console.log(props.todo)
     return (
-        <ul>
-        </ul>
+        <ul>{
+            props.todos.map((todo) => {
+                return <li key={todo.id}>{todo.title}</li>;
+            })
+        }</ul>
     );
 }
 

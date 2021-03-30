@@ -1,5 +1,6 @@
 import './Todo.css'
 import TodoList from '../todo-list/TodoList'
+import TodoCreate from '../todo-create/TodoCreate'
 
 function Todo() {
     const data = [
@@ -10,7 +11,8 @@ function Todo() {
     return (
         <div>
             <h3>Todo List</h3>
-            <TodoList todo={data} />
+            <TodoCreate />
+            <TodoList todos={data} />
         </div>
     );
 }
