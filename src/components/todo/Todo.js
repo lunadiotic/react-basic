@@ -11,7 +11,8 @@ function Todo() {
     ])
     
     const eventCreateTodo = (todo) => {
-       setTodo(getTodo.concat(todo))
+    //    setTodo(getTodo.concat(todo))
+        setTodo(prevTodo => prevTodo.concat(todo))
     }
 
     return (
